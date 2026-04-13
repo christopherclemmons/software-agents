@@ -1,0 +1,31 @@
+# Codex Configuration
+# Minimal configuration file for getting started
+
+[project]
+name = "software-agents"
+version = "0.1.0"
+
+[agents]
+# Core Agent
+orchestrator = { description = "Orchestrator Agent - coordinates multi-agent collaboration", enabled = true }
+
+# Specialist Agents
+react = { description = "React Agent - frontend UI and client logic", enabled = true }
+node = { description = "Node Agent - backend services and APIs", enabled = true }
+dotnet = { description = ".NET Agent - backend services and enterprise patterns", enabled = true }
+postgresql = { description = "PostgreSQL Agent - database schema, queries, and performance", enabled = true }
+terraform = { description = "Terraform Agent - infrastructure as code", enabled = true }
+aws = { description = "AWS Agent - cloud architecture and services", enabled = true }
+security = { description = "Security Agent - security review and risk analysis", enabled = true }
+testing = { description = "Testing Agent - QA, validation, and reliability", enabled = true }
+
+[skills]
+# Available skills in the system
+domain-modeling = { path = ".agents/skills/domain-modeling/SKILL.md", enabled = true }
+postgresql = { path = ".agents/skills/postgresql/SKILL.md", enabled = true }
+mongodb = { path = ".agents/skills/mongodb/SKILL.md", enabled = true }
+react = { path = ".agents/skills/react/SKILL.md", enabled = true }
+dotnet = { path = ".agents/skills/dotnet/SKILL.md", enabled = true }
+nestjs = { path = ".agents/skills/nestjs/SKILL.md", enabled = true }
+terraform = { path = ".agents/skills/terraform/SKILL.md", enabled = true }
+python = { path = ".agents/skills/python/SKILL.md", enabled = true }
